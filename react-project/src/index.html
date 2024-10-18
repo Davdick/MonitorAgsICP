@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,4 +10,54 @@
     <div id="root"></div>
     <script type="module" src="./main.tsx"></script>
   </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonitorAGS - Transformando llamadas de emergencia 911 en reportes accionables</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/logo-monitorags.png" alt="Logo MonitorAGS" class="logo">
+        <h1>MonitorAGS - Transformando llamadas de emergencia 911 en reportes accionables</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Reportes</a>
+            <a href="#">Estadísticas</a>
+        </nav>
+    </header>
+    <main>
+        <div class="panels">
+            <div class="panel">
+                <h2>Transcripción cruda</h2>
+                <textarea id="rawTranscription" placeholder="Transcripción cruda de la llamada al 911..."></textarea>
+            </div>
+            <div class="panel">
+                <h2>Reporte estructurado</h2>
+                <div class="structured-report">
+                    <div>
+                        <label for="emergency">¿Cuál es la emergencia?</label>
+                        <input type="text" id="emergency">
+                    </div>
+                    <div>
+                        <label for="address">¿Cuál es la dirección?</label>
+                        <input type="text" id="address">
+                    </div>
+                    <div>
+                        <label for="description">¿Qué sucedió?</label>
+                        <textarea id="description"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="clearFields">Limpiar campos</button>
+        <div id="map"></div>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>
