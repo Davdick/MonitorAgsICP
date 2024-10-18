@@ -1,42 +1,112 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  background-color: #007bff; /* Color azul brillante */
+  color: white;
   text-align: center;
+  padding: 20px 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.banner-content {
+  display: flex; /* Usar flexbox */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: space-between; /* Espaciar elementos entre los extremos */
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenido */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner-logo {
+  max-width: 100px; /* Ajusta el ancho máximo de la imagen */
+  margin-right: 20px; /* Espacio a la derecha de la imagen */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.card {
-  padding: 2em;
+.banner-content h1,
+.banner-content p {
+  margin: 0 15px; /* Ajusta el margen según sea necesario */
 }
 
-.read-the-docs {
-  color: #888;
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.app-footer {
+  text-align: center;
+  background-color: #343a40; /* Color gris oscuro */
+  color: white;
+  padding: 10px 0;
+}
+
+.app-banner {
+  background-color: #2c3e50; /* Color de fondo del banner */
+  color: white; /* Color del texto */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centrar texto */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.banner-content {
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenido */
+}
+
+.app-banner h1 {
+  font-size: 2.5em; /* Tamaño de fuente del encabezado */
+  margin: 0; /* Sin margen */
+}
+
+.app-banner p {
+  font-size: 1.2em; /* Tamaño de fuente del subtítulo */
+  margin-top: 10px; /* Margen superior */
+}
+
+.banner-nav ul {
+  list-style: none; /* Sin puntos en la lista */
+  padding: 0; /* Sin padding */
+  margin: 15px 0 0; /* Margen superior */
+  display: flex; /* Usar flexbox para el menú */
+  justify-content: center; /* Centrar los elementos */
+}
+
+.banner-nav li {
+  margin: 0 15px; /* Espaciado entre elementos */
+}
+
+.banner-nav a {
+  color: white; /* Color del texto del menú */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Texto en negrita */
+  transition: color 0.3s; /* Transición suave para el hover */
+}
+
+.banner-nav a:hover {
+  color: #3498db; /* Color al pasar el mouse */
 }
