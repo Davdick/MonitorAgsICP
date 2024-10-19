@@ -16,19 +16,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MonitorAGS - Transformando llamadas de emergencia 911 - 809 en reportes accionables</title>
+    <title>MonitorAGS - Transformando llamadas de emergencia 911 en reportes accionables</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="App.css">
 </head>
 <body>
     <header>
-        <img src="./assets/iconLogo.jpg" alt="Logo MonitorAGS" class="logo">
+        <img src="./assets/logo-monitorags.png" alt="Logo MonitorAGS" class="logo">
         <h1>MonitorAGS - Transformando llamadas de emergencia 911 en reportes accionables</h1>
         <nav>
             <a href="#">Inicio</a>
-            <a href="#">Rutas y puntos de monitoreo</a>
-            <a href="#">Horarios de monitoreo y patrullaje</a>
-            <a href="#">Generación de perfiles criminales</a>
+            <a href="#">Reportes</a>
+            <a href="#">Estadísticas</a>
         </nav>
     </header>
     <main>
@@ -45,7 +44,7 @@
                         <input type="text" id="emergency">
                     </div>
                     <div>
-                        <label for="address">Palabras clave</label>
+                        <label for="address">¿Cuál es la dirección?</label>
                         <input type="text" id="address">
                     </div>
                     <div>
@@ -57,25 +56,8 @@
         </div>
         <button id="clearFields">Limpiar campos</button>
         <div id="map"></div>
-
-        <!-- Sección de Horarios de Monitoreo/Patrullaje -->
-        <section class="panel" id="schedules">
-          <h2>Horarios de Monitoreo/Patrullaje</h2>
-          <div class="content">
-              <p>Estadísticas temporales sobre los incidentes reportados. Los horarios de patrullaje se ajustan según los patrones detectados.</p>
-              <!-- Aquí añadimos el canvas para el gráfico -->
-              <img src="assets/GraphsM.jpeg" width="400" height="400">
-          </div>
-      </section>
-      <footer>
-          <p>&copy; 2024 Plataforma de Seguridad Ciudadana</p>
-      </footer>
-  
-  
-         
     </main>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
